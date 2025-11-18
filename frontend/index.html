@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Toyota_Gazoo_Racing_logo.svg" alt="Toyota GR Logo">
+      <img src="https://en.wikipedia.org/wiki/File:Toyota_Gazoo_Racing_stacked_logo.svg" alt="Toyota GR Logo">
       <h1>Driver Analytics</h1>
     </div>
   </header>
@@ -17,20 +17,25 @@
   <main>
     <section class="form-section">
       <h2>Race Performance Insights</h2>
-      <p>Enter a driver name and race file to analyze detailed performance data.</p>
-
+      <p>Lets Analyze Performance.</p>
+        <div class="form-group">
+            <label for="raceType">Choose Type</label>
+            <select id="raceType" name="raceType" required>
+                <option value="" disabled selected>Select a dataset...</option>
+                <option value="bestLaps">Best Laps</option>
+                <option value="spa">Spa-Francorchamps</option>
+                <option value="silverstone">Silverstone</option>
+                <option value="monaco">Monaco</option>
+                <option value="le_mans">24 Hours of Le Mans</option>
+            </select>
+        </div>
       <form id="analyticsForm">
         <div class="form-group">
           <label for="driver">Driver Name</label>
           <input type="text" id="driver" placeholder="e.g. John Doe" required>
         </div>
 
-        <div class="form-group">
-          <label for="race">Race File (CSV)</label>
-          <input type="text" id="race" placeholder="e.g. race1.csv" required>
-        </div>
-
-        <button type="submit">Analyze Driver</button>
+        <button type="submit">Analyze</button>
       </form>
     </section>
 
