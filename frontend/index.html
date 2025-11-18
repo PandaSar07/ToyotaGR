@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Toyota GR Driver Analytics</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Toyota_Gazoo_Racing_logo.svg" alt="Toyota GR Logo">
+      <h1>Driver Analytics</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Race Performance Insights</h2>
+      <p>Enter a driver name and race file to analyze detailed performance data.</p>
+
+      <form id="analyticsForm">
+        <div class="form-group">
+          <label for="driver">Driver Name</label>
+          <input type="text" id="driver" placeholder="e.g. John Doe" required>
+        </div>
+
+        <div class="form-group">
+          <label for="race">Race File (CSV)</label>
+          <input type="text" id="race" placeholder="e.g. race1.csv" required>
+        </div>
+
+        <button type="submit">Analyze Driver</button>
+      </form>
+    </section>
+
+    <section id="results" class="results hidden">
+      <h2>Driver Stats</h2>
+      <div class="result-card" id="resultCard"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>🏁 Toyota GR Hackathon — Powered by Data & Passion</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
